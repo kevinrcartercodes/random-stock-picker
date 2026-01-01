@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Random Stock Picker</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
@@ -23,6 +23,11 @@
             --bb-text-muted: #666666;
         }
         
+        html, body {
+            overflow-x: hidden;
+            width: 100%;
+        }
+
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
             background: var(--bb-black);
@@ -30,10 +35,13 @@
             min-height: 100vh;
             font-size: 13px;
             line-height: 1.4;
+            position: relative;
         }
-        
+
         .terminal {
             max-width: 1200px;
+            width: 100%;
+            overflow-x: hidden;
             margin: 0 auto;
             border-left: 1px solid var(--bb-border);
             border-right: 1px solid var(--bb-border);
@@ -262,6 +270,8 @@
         #tradingview-widget {
             height: 350px;
             background: var(--bb-black);
+            overflow: hidden;
+            max-width: 100%;
         }
         
         .placeholder {
@@ -402,12 +412,14 @@
             background: var(--bb-dark);
             border-top: 1px solid var(--bb-border);
             padding: 15px 20px;
+            overflow: hidden;
         }
-        
+
         .info-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            overflow: hidden;
         }
         
         .info-item {
