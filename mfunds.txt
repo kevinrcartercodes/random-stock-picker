@@ -1,0 +1,22 @@
+<html><head><title>Object moved</title></head><body>
+<h2>Object moved to <a href="/Trader.aspx?id=http404">here</a>.</h2>
+</body></html>
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head><title>
+	File Not Found
+</title></head>
+<body>
+    <form name="form1" method="post" action="./mfundslist.txt?404%3bhttps%3a%2f%2fwww.nasdaqtrader.com%3a443%2fdynamic%2fSymDir%2fmfundslist.txt" id="form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJNzgzNDMwNTMzZGRsS+AR8m0SbjzvLAlGyXSW9aX6DA==" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="5FDD1D51" />
+    <div>
+        <span style="font-weight:bold; color:Red">File you have requested was not found on this server</span>
+    </div>
+    </form>
+</body>
+</html>
