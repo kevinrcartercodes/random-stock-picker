@@ -12064,46 +12064,75 @@
 
             els.description.textContent = 'Loading profile...';
 
-            try {
-                let searchName = s.n
-                    .replace(/,?\s*(Inc\.?|Corp\.?|Corporation|Company|Ltd\.?|LLC|PLC|N\.?V\.?|S\.?A\.?|AG|Holdings?|Group|International|&|Incorporated)\.?\s*/gi, ' ')
-                    .replace(/\s+/g, ' ')
-                    .trim();
+            // Check if result looks like a company description
+            function isCompanyDescription(text) {
+                const companyKeywords = ['company', 'corporation', 'headquartered', 'founded', 'business',
+                    'manufacturer', 'provider', 'produces', 'develops', 'sells', 'offers', 'operates',
+                    'services', 'products', 'industry', 'sector', 'NYSE', 'NASDAQ', 'publicly traded',
+                    'subsidiary', 'conglomerate', 'enterprise', 'firm', 'multinational'];
+                const lowerText = text.toLowerCase();
+                return companyKeywords.some(kw => lowerText.includes(kw));
+            }
 
+            // Extract first 2 sentences
+            function getShortDesc(text) {
+                const sentences = text.match(/[^.!?]+[.!?]+/g) || [text];
+                return sentences.slice(0, 2).join(' ').trim();
+            }
+
+            // Try fetching from Wikipedia
+            async function tryWikipedia(searchTerm) {
+                try {
+                    const url = `https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(searchTerm)}`;
+                    const resp = await fetch(url);
+                    if (resp.ok) {
+                        const data = await resp.json();
+                        if (data.extract && data.extract.length > 30 &&
+                            !data.extract.includes('may refer to') &&
+                            !data.extract.includes('disambiguation')) {
+                            return data.extract;
+                        }
+                    }
+                } catch (e) {}
+                return null;
+            }
+
+            try {
                 if (s.y === 'ETF') {
                     els.description.textContent = 'Exchange-traded fund tracking a specific index, sector, or asset class.';
                     descriptionCache[s.t] = els.description.textContent;
                     return;
                 }
 
-                const searchUrl = `https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(searchName)}`;
-                const resp = await fetch(searchUrl);
-                
-                if (resp.ok) {
-                    const data = await resp.json();
-                    if (data.extract && data.extract.length > 20) {
-                        const sentences = data.extract.match(/[^.!?]+[.!?]+/g) || [data.extract];
-                        const short = sentences.slice(0, 2).join(' ').trim();
+                // Build search variations - prioritize full company name
+                const fullName = s.n;
+                const searches = [
+                    fullName,                                    // "Workhorse Group, Inc."
+                    fullName + ' company',                       // "Workhorse Group, Inc. company"
+                    fullName.replace(/,?\s*(Inc\.?|Corp\.?|Corporation|Company|Ltd\.?|LLC|PLC)\.?$/i, '').trim(),  // "Workhorse Group"
+                    fullName.replace(/,?\s*(Inc\.?|Corp\.?|Corporation|Company|Ltd\.?|LLC|PLC)\.?$/i, '').trim() + ' (company)',  // "Workhorse Group (company)"
+                ];
+
+                for (const search of searches) {
+                    const result = await tryWikipedia(search);
+                    if (result && isCompanyDescription(result)) {
+                        const short = getShortDesc(result);
                         els.description.textContent = short;
                         descriptionCache[s.t] = short;
                         return;
                     }
                 }
 
-                const tickerUrl = `https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(s.t)}`;
-                const tickerResp = await fetch(tickerUrl);
-                
-                if (tickerResp.ok) {
-                    const data = await tickerResp.json();
-                    if (data.extract && data.extract.length > 20 && !data.extract.includes('may refer to')) {
-                        const sentences = data.extract.match(/[^.!?]+[.!?]+/g) || [data.extract];
-                        const short = sentences.slice(0, 2).join(' ').trim();
-                        els.description.textContent = short;
-                        descriptionCache[s.t] = short;
-                        return;
-                    }
+                // Fallback: try ticker symbol
+                const tickerResult = await tryWikipedia(s.t);
+                if (tickerResult && isCompanyDescription(tickerResult)) {
+                    const short = getShortDesc(tickerResult);
+                    els.description.textContent = short;
+                    descriptionCache[s.t] = short;
+                    return;
                 }
 
+                // Final fallback
                 els.description.textContent = 'Security traded on ' + s.e + ' exchange.';
                 descriptionCache[s.t] = els.description.textContent;
 
