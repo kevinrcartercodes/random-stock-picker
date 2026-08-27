@@ -5,12 +5,12 @@ A truly random stock picker from the complete universe of E*TRADE tradeable secu
 **Live Site:** [https://kevinrcartercodes.github.io/random-stock-picker/](https://kevinrcartercodes.github.io/random-stock-picker/)
 
 ![Bloomberg Terminal Style Interface](https://img.shields.io/badge/style-Bloomberg%20Terminal-ff6600)
-![Securities](https://img.shields.io/badge/securities-11%2C351-blue)
+![Securities](https://img.shields.io/badge/securities-12%2C302-blue)
 ![Randomness](https://img.shields.io/badge/randomness-cryptographic-green)
 
 ## Purpose
 
-This tool provides a **truly random** stock selection from over 11,000 securities available on E*TRADE. No algorithms, no bias, no stock screeners—just pure randomness.
+This tool provides a **truly random** stock selection from over 12,000 securities available on E*TRADE. No algorithms, no bias, no stock screeners—just pure randomness.
 
 ## My Investment Strategy
 
@@ -26,7 +26,7 @@ This strategy combines the randomness of selection (removing emotional/cognitive
 
 ## Features
 
-- **11,351 Securities**: Stocks and ETFs from NYSE, NASDAQ, and AMEX
+- **12,302 Securities**: Stocks and ETFs from NASDAQ, NYSE, NYSE ARCA, BATS, and AMEX
 - **Cryptographic Randomness**: Uses `crypto.getRandomValues()` for true randomness (same quality as encryption keys)
 - **Real-Time Data**: Live price charts and quotes via TradingView
 - **Company Profiles**: Descriptions pulled from Wikipedia
