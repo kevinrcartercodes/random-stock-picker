@@ -529,6 +529,8 @@
                 <button class="func-tab" data-filter="ETF">ETFs (5,653)</button>
                 <button class="func-tab" data-filter="NASDAQ">NASDAQ</button>
                 <button class="func-tab" data-filter="NYSE">NYSE</button>
+                <button class="func-tab" data-filter="NYSE ARCA">NYSE ARCA</button>
+                <button class="func-tab" data-filter="BATS">BATS</button>
                 <button class="func-tab" data-filter="AMEX">AMEX</button>
             </div>
             <span class="timestamp" id="market-time"></span>
@@ -13014,7 +13016,7 @@
             );
             if (f === 'all') filtered = [...securities];
             else if (f === 'Stock' || f === 'ETF') filtered = securities.filter(s => s.y === f);
-            else filtered = securities.filter(s => s.e.includes(f));
+            else filtered = securities.filter(s => s.e === f);
             
             els.filterCount.textContent = filtered.length.toLocaleString() + ' securities available';
             els.statFiltered.textContent = filtered.length.toLocaleString();
