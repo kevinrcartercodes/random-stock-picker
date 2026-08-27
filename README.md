@@ -42,6 +42,26 @@ This strategy combines the randomness of selection (removing emotional/cognitive
 | Charts & Prices | [TradingView](https://www.tradingview.com/) |
 | Randomization | Web Crypto API (`crypto.getRandomValues()`) |
 
+## Refreshing the Data
+
+Listings change constantly — companies IPO, delist, merge and get acquired,
+and new ETFs launch weekly. To pull the current universe from NASDAQ's
+official symbol directory and rewrite every file that carries a copy of it:
+
+```bash
+python3 build.py --dry-run   # report what would change, write nothing
+python3 build.py             # rebuild the data files
+git diff --stat              # review
+git commit -am "Refresh securities" && git push   # publish
+```
+
+No dependencies beyond the Python 3 standard library. The script is
+idempotent: running it twice against the same source data produces no diff.
+
+Warrants, rights and units are excluded — see the comments in `build.py`,
+which explain why the exclusion must be anchored to the ticker suffix rather
+than matched as a substring.
+
 ## How the Randomness Works
 
 Unlike `Math.random()` which uses a predictable pseudo-random algorithm, this tool uses the Web Crypto API:
