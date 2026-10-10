@@ -7,9 +7,10 @@ carries a copy of the security list:
 
     nasdaq.txt           raw NASDAQ-listed dump (audit trail)
     other.txt            raw NYSE / NYSE ARCA / AMEX / BATS dump (audit trail)
-    all_securities.json  stocks + ETFs
+    all_securities.json  stocks + ETFs  (what the page and the strategy draw from)
     all_stocks.json      stocks only
-    index.html           the embedded `securities` array the page actually uses
+    index.html           headline counts in markup and meta tags (the page
+                         loads the list itself from all_securities.json)
     README.md            headline counts
 
 Usage:
@@ -115,30 +116,20 @@ def build(nasdaq_text, other_text):
     return out
 
 
-def current_symbols(path='index.html'):
-    """Symbols currently embedded in index.html, for the change report."""
+def current_symbols(path='all_securities.json'):
+    """Symbols the page currently serves, for the change report."""
     try:
-        html, _ = read_text(path)
+        return {s['symbol'] for s in json.load(open(path, encoding='utf-8'))}
     except FileNotFoundError:
         return set()
-    return set(re.findall(r'\{t:"([^"]+)"', html))
 
 
 def write_index(securities, path='index.html'):
-    """Replace the embedded `securities` array, leaving all other markup alone."""
-    text, newline = read_text(path)
-    lines = text.split(newline)
-    start = next(i for i, l in enumerate(lines) if l.strip() == 'const securities = [')
-    end = next(i for i in range(start + 1, len(lines)) if lines[i].strip() == '];')
+    """Refresh the counts baked into index.html's markup and meta tags.
 
-    def esc(s):
-        return s.replace('\\', '\\\\').replace('"', '\\"')
-
-    body = [f'            {{t:"{esc(s["t"])}",n:"{esc(s["n"])}",e:"{s["e"]}",y:"{s["y"]}"}}'
-            for s in securities]
-    body = [b + ',' for b in body[:-1]] + [body[-1]]
-
-    html = newline.join(lines[:start + 1] + body + lines[end:])
+    The page loads the list itself from all_securities.json at runtime.
+    """
+    html, _ = read_text(path)
 
     # The page derives these at load via refreshCounts(); keeping the initial
     # markup correct avoids a flash of stale numbers on first paint.
@@ -151,6 +142,8 @@ def write_index(securities, path='index.html'):
     html = re.sub(r'[\d,]+ securities available', f'{total:,} securities available', html)
     html = re.sub(r'(id="stat-total">)[\d,]+<', rf'\g<1>{total:,}<', html)
     html = re.sub(r'(id="stat-filtered">)[\d,]+<', rf'\g<1>{total:,}<', html)
+    html = re.sub(r'\d[\d,]* (US stocks and ETFs|US securities)', rf'{total:,} \1', html)
+    html = re.sub(r"That's [\d,]+ securities", f"That's {total:,} securities", html)
 
     write_text(path, html)
 

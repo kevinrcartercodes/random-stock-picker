@@ -20,7 +20,9 @@ I use this tool as part of a personal investment strategy:
 2. **Six-Month Review**: Every six months, review performance of all holdings
 3. **Cull the Losers**: Sell all but the top 12 performing stocks
 4. **Double Down on Winners**: Double the number of shares owned in the remaining 12
-5. **Reinvest Dividends**: All dividends are automatically reinvested
+5. **Reinvest Dividends**: All dividends are automatically reinvested (reinvested shares don't count toward the doubling)
+
+The site runs this strategy in public as **The Random Strategy** (right-hand panel), starting Monday, October 12, 2026.
 
 This strategy combines the randomness of selection (removing emotional/cognitive bias) with a disciplined approach to portfolio management—letting winners run while cutting losers.
 
@@ -32,6 +34,9 @@ This strategy combines the randomness of selection (removing emotional/cognitive
 - **Company Profiles**: Descriptions pulled from Wikipedia
 - **Quick Links**: Direct links to E*TRADE, Yahoo Finance, Google Finance, Finviz, SEC filings, and news
 - **Filter Options**: Filter by stocks, ETFs, or exchange
+- **Shareable Picks**: Every pick gets its own link (`?t=TICKER`) plus Share / Copy-link buttons and rich link previews
+- **Company Profiles**: CEO, founding year, HQ, employees, industry and website from Wikidata; summary from Wikipedia; business profile, fundamentals, technicals and news from TradingView
+- **The Random Strategy**: a live, self-updating model portfolio of the investment strategy above, benchmarked against SPY
 
 ## Data Sources
 
@@ -61,6 +66,26 @@ idempotent: running it twice against the same source data produces no diff.
 Warrants, rights and units are excluded — see the comments in `build.py`,
 which explain why the exclusion must be anchored to the ticker suffix rather
 than matched as a substring.
+
+## The Random Strategy (live portfolio)
+
+A GitHub Actions job (`.github/workflows/strategy.yml`) runs `strategy/engine.py`:
+
+- **Monday 9:00 ET**: draws the week's pick with Python's `secrets` module (redrawing if the symbol has no market data) and appends it to `strategy/picks.json`, a public, append-only record.
+- **Every weekday after the close**: pulls split-adjusted prices, dividends and splits from Yahoo Finance's chart endpoint, replays the whole strategy from scratch, and writes `strategy/portfolio.json`, which the page renders.
+
+Ledger rules: buys fill at the pick day's close (or the next trading day's close after a holiday). Dividends are reinvested at the ex-date close as separately tracked DRIP shares. Every 26 weeks, positions are ranked by total return, all but the top 12 are sold, and each survivor's *purchased* shares are doubled. The review runs before that week's buy. The benchmark puts the same dollars into SPY on the same days.
+
+```bash
+python3 -m unittest strategy/test_engine.py   # rule tests on synthetic data
+python3 strategy/engine.py --no-pick           # rebuild the ledger without picking
+```
+
+Run the workflow by hand from the Actions tab (**Random Strategy → Run workflow**) at any time.
+
+## Analytics
+
+Analytics are off by default. To turn them on, create a free site at [GoatCounter](https://www.goatcounter.com) and put its code in `data-goatcounter-code` on the `<script id="analytics">` tag in `index.html`. Each pick is recorded as a `pick/TICKER` event.
 
 ## How the Randomness Works
 

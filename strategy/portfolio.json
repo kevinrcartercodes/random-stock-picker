@@ -1,0 +1,19 @@
+{
+ "generated_at": "2026-10-10T20:27:28+00:00",
+ "rules": {
+  "start": "2026-10-12",
+  "review_weeks": 26,
+  "keep": 12,
+  "benchmark": "SPY"
+ },
+ "next_pick": "2026-10-12",
+ "next_review": "2027-04-12",
+ "picks": [],
+ "status": "not_started",
+ "as_of": null,
+ "holdings": [],
+ "pending": [],
+ "transactions": [],
+ "series": [],
+ "summary": null
+}
