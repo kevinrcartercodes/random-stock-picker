@@ -124,10 +124,15 @@ def fetch_history(ticker, start, end):
 
 def fetch_history_yf(ticker, start, end):
     import yfinance as yf
+    kwargs = {}
+    try:
+        yf.config.debug.hide_exceptions = False   # surface rate limits as errors
+    except AttributeError:                        # older yfinance
+        kwargs['raise_errors'] = True
     df = yf.Ticker(yahoo_symbol(ticker)).history(
         start=(start - timedelta(days=7)).isoformat(),
         end=(end + timedelta(days=2)).isoformat(),
-        interval='1d', auto_adjust=False, actions=True, raise_errors=True)
+        interval='1d', auto_adjust=False, actions=True, **kwargs)
     if df is None or df.empty:
         return None
     # auto_adjust=False: Close is split-adjusted but not dividend-adjusted,
@@ -373,7 +378,8 @@ def today_et():
 
 def make_due_picks(picks, today, fetch=fetch_history):
     """Append a random pick for every scheduled Monday that lacks one."""
-    universe = json.load(open(UNIVERSE))
+    with open(UNIVERSE) as f:
+        universe = json.load(f)
     have = {p['date'] for p in picks}
     made = []
     for i, d in enumerate(pick_dates(today)):
@@ -413,9 +419,44 @@ def check_price_source(today):
     print(f'price source OK: {BENCHMARK} closed at {h["close"][d]:.2f} on {d}')
 
 
+def self_test(today):
+    """Replay a 3-month mini strategy on real data for awkward symbols.
+
+    KO pays dividends, BRK.B has a class suffix, ABR$D is a preferred. Catches
+    data-format surprises before a real pick depends on them. Writes nothing.
+    """
+    global START
+    saved = START
+    try:
+        START = today - timedelta(days=today.weekday()) - timedelta(weeks=12)
+        tickers = ['KO', 'BRK.B', 'ABR$D']
+        picks = [{'week': i + 1, 'date': (START + timedelta(weeks=i)).isoformat(), 'ticker': t}
+                 for i, t in enumerate(tickers)]
+        hist = {t: fetch_history(t, START, today) for t in tickers + [BENCHMARK]}
+        missing = [t for t, h in hist.items() if h is None]
+        if missing:
+            print(f'self-test: no data for {missing} (symbol mapping may need a look)')
+            hist = {t: h for t, h in hist.items() if h is not None}
+            picks = [p for p in picks if p['ticker'] in hist]
+        r = compute(picks, hist, today)
+        for h in r['holdings']:
+            print(f"self-test: {h['ticker']:6} {h['shares']:.4f} sh "
+                  f"(DRIP {h['drip_shares']:.4f}) cost ${h['cost']:.2f} -> ${h['value']:.2f} "
+                  f"{h['return_pct']:+.2f}%")
+        s = r['summary']
+        print(f"self-test OK: ${s['invested']:.2f} in, ${s['total_value']:.2f} now, "
+              f"dividends ${s['dividends']:.2f}, SPY-equivalent ${s['benchmark_value']:.2f}")
+    finally:
+        START = saved
+
+
 def main():
     today = today_et()
     check_price_source(today)
+    try:
+        self_test(today)
+    except Exception as e:   # diagnostic only; never block the real run
+        print(f'self-test warning: {type(e).__name__}: {e}')
     picks = json.load(open(PICKS)) if os.path.exists(PICKS) else []
     if '--no-pick' not in sys.argv:
         for p in make_due_picks(picks, today):
