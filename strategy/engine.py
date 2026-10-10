@@ -24,6 +24,8 @@ split-adjusted price history, so a failed or late run never corrupts it.
 Usage:
     python3 strategy/engine.py            # make any due pick, rebuild portfolio.json
     python3 strategy/engine.py --no-pick  # rebuild only
+
+Every run first checks that the price feed answers for SPY.
 """
 
 import json
@@ -356,8 +358,18 @@ def make_due_picks(picks, today, fetch=fetch_history):
     return made
 
 
+def check_price_source(today):
+    """Fail loudly if the price feed is unreachable, before any pick depends on it."""
+    h = fetch_history(BENCHMARK, today - timedelta(days=14), today)
+    if not h:
+        raise SystemExit(f'price check failed: no data for {BENCHMARK}')
+    d = max(h['close'])
+    print(f'price source OK: {BENCHMARK} closed at {h["close"][d]:.2f} on {d}')
+
+
 def main():
     today = today_et()
+    check_price_source(today)
     picks = json.load(open(PICKS)) if os.path.exists(PICKS) else []
     if '--no-pick' not in sys.argv:
         for p in make_due_picks(picks, today):
