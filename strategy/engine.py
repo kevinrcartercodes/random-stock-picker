@@ -92,11 +92,57 @@ def yahoo_symbol(t):
 
 
 def fetch_history(ticker, start, end):
-    """Daily split-adjusted closes, dividends and splits from Yahoo's chart API.
+    """Daily split-adjusted closes, dividends and splits from Yahoo Finance.
 
     Returns {'close': {date: px}, 'div': {date: amt}, 'split': {date: ratio}}
     or None if the symbol has no data.
+
+    Yahoo rate-limits plain HTTP clients from cloud IPs (HTTP 429), so this
+    goes through yfinance, which does Yahoo's cookie/crumb handshake with a
+    browser-like TLS fingerprint. The plain request is only a fallback.
     """
+    try:
+        import yfinance  # noqa: F401
+    except ImportError:
+        return fetch_history_http(ticker, start, end)
+    from yfinance.exceptions import YFRateLimitError
+    last_err = None
+    for attempt in range(4):
+        try:
+            return fetch_history_yf(ticker, start, end)
+        except YFRateLimitError as e:
+            last_err = e
+        except Exception as e:
+            # Unknown, delisted or data-less symbol: not worth retrying.
+            if 'rate' not in str(e).lower():
+                print(f'{ticker}: no data ({type(e).__name__}: {e})')
+                return None
+            last_err = e
+        time.sleep(5 * 2 ** attempt)
+    raise RuntimeError(f'{ticker}: {last_err}')
+
+
+def fetch_history_yf(ticker, start, end):
+    import yfinance as yf
+    df = yf.Ticker(yahoo_symbol(ticker)).history(
+        start=(start - timedelta(days=7)).isoformat(),
+        end=(end + timedelta(days=2)).isoformat(),
+        interval='1d', auto_adjust=False, actions=True, raise_errors=True)
+    if df is None or df.empty:
+        return None
+    # auto_adjust=False: Close is split-adjusted but not dividend-adjusted,
+    # and Dividends are split-adjusted, matching the ledger's conventions.
+    closes = {i.date(): float(v) for i, v in df['Close'].items() if v == v}
+    divs = {i.date(): float(v) for i, v in df['Dividends'].items() if v}
+    splits = ({i.date(): float(v) for i, v in df['Stock Splits'].items() if v}
+              if 'Stock Splits' in df else {})
+    if not closes:
+        return None
+    return {'close': closes, 'div': divs, 'split': splits}
+
+
+def fetch_history_http(ticker, start, end):
+    """Plain request to Yahoo's chart API (fallback when yfinance is absent)."""
     p1 = int(datetime.combine(start - timedelta(days=7), datetime.min.time(),
                               tzinfo=timezone.utc).timestamp())
     p2 = int(datetime.combine(end + timedelta(days=2), datetime.min.time(),
