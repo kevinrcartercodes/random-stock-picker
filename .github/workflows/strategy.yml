@@ -2,7 +2,13 @@ name: Random Strategy
 
 # Monday morning: draw the week's pick before the open (it fills at the close).
 # Every weekday evening: refresh prices, dividends and the ledger after the close.
+# Also rebuilds when the engine or this workflow changes on main.
 on:
+  push:
+    branches: [main]
+    paths:
+      - 'strategy/engine.py'
+      - '.github/workflows/strategy.yml'
   schedule:
     - cron: '0 13 * * 1'      # Mon 9:00 ET (8:00 in winter)
     - cron: '30 21 * * 1-5'   # Mon-Fri 5:30 PM ET (4:30 PM in winter)
