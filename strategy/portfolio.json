@@ -1,19 +1,77 @@
 {
- "generated_at": "2026-10-10T20:42:11+00:00",
+ "generated_at": "2026-10-12T21:36:34+00:00",
  "rules": {
   "start": "2026-10-12",
   "review_weeks": 26,
   "keep": 12,
   "benchmark": "SPY"
  },
- "next_pick": "2026-10-12",
+ "next_pick": "2026-10-19",
  "next_review": "2027-04-12",
- "picks": [],
- "status": "not_started",
- "as_of": null,
- "holdings": [],
+ "picks": [
+  {
+   "week": 1,
+   "date": "2026-10-12",
+   "ticker": "ASMH",
+   "name": "ASML Holding NV ADRhedged",
+   "exchange": "NYSE ARCA",
+   "type": "ETF",
+   "universe_size": 12302,
+   "picked_at": "2026-10-12T21:36:34+00:00",
+   "rng": "python secrets.randbelow"
+  }
+ ],
+ "as_of": "2026-10-12",
+ "summary": {
+  "invested": 12.35,
+  "market_value": 12.35,
+  "cash": 0.0,
+  "total_value": 12.35,
+  "total_return_pct": -0.0,
+  "realized_pl": 0.0,
+  "dividends": 0.0,
+  "positions": 1,
+  "benchmark": "SPY",
+  "benchmark_value": 12.35,
+  "benchmark_return_pct": -0.0
+ },
+ "holdings": [
+  {
+   "ticker": "ASMH",
+   "name": "ASML Holding NV ADRhedged",
+   "exchange": "NYSE ARCA",
+   "type": "ETF",
+   "bought_shares": 1.0,
+   "drip_shares": 0.0,
+   "shares": 1.0,
+   "cost": 12.35,
+   "price": 12.35,
+   "price_date": "2026-10-12",
+   "value": 12.35,
+   "dividends": 0.0,
+   "return_pct": 0.0,
+   "first_bought": "2026-10-12"
+  }
+ ],
  "pending": [],
- "transactions": [],
- "series": [],
- "summary": null
+ "transactions": [
+  {
+   "date": "2026-10-12",
+   "type": "BUY",
+   "ticker": "ASMH",
+   "shares": 1.0,
+   "price": 12.35,
+   "amount": 12.35,
+   "week": 1
+  }
+ ],
+ "series": [
+  {
+   "date": "2026-10-12",
+   "value": 12.35,
+   "invested": 12.35,
+   "benchmark": 12.35
+  }
+ ],
+ "status": "active"
 }
