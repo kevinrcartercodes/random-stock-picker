@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-15T23:44:41+00:00",
+ "generated_at": "2026-10-16T23:44:59+00:00",
  "rules": {
   "start": "2026-10-12",
   "review_weeks": 26,
@@ -21,19 +21,19 @@
    "rng": "python secrets.randbelow"
   }
  ],
- "as_of": "2026-10-15",
+ "as_of": "2026-10-16",
  "summary": {
   "invested": 12.35,
-  "market_value": 11.61,
+  "market_value": 11.51,
   "cash": 0.0,
-  "total_value": 11.61,
-  "total_return_pct": -5.99,
+  "total_value": 11.51,
+  "total_return_pct": -6.8,
   "realized_pl": 0.0,
   "dividends": 0.0,
   "positions": 1,
   "benchmark": "SPY",
-  "benchmark_value": 12.25,
-  "benchmark_return_pct": -0.81
+  "benchmark_value": 12.11,
+  "benchmark_return_pct": -1.94
  },
  "holdings": [
   {
@@ -45,11 +45,11 @@
    "drip_shares": 0.0,
    "shares": 1.0,
    "cost": 12.35,
-   "price": 11.61,
-   "price_date": "2026-10-15",
-   "value": 11.61,
+   "price": 11.5091,
+   "price_date": "2026-10-16",
+   "value": 11.51,
    "dividends": 0.0,
-   "return_pct": -5.99,
+   "return_pct": -6.81,
    "first_bought": "2026-10-12"
   }
  ],
@@ -89,6 +89,12 @@
    "value": 11.61,
    "invested": 12.35,
    "benchmark": 12.25
+  },
+  {
+   "date": "2026-10-16",
+   "value": 11.51,
+   "invested": 12.35,
+   "benchmark": 12.11
   }
  ],
  "status": "active"
