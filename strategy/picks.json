@@ -9,5 +9,16 @@
     "universe_size": 12302,
     "picked_at": "2026-10-12T21:36:34+00:00",
     "rng": "python secrets.randbelow"
+  },
+  {
+    "week": 2,
+    "date": "2026-10-19",
+    "ticker": "ATTR",
+    "name": "Arin Tactical Tail Risk ETF",
+    "exchange": "BATS",
+    "type": "ETF",
+    "universe_size": 12302,
+    "picked_at": "2026-10-19T19:06:06+00:00",
+    "rng": "python secrets.randbelow"
   }
 ]
