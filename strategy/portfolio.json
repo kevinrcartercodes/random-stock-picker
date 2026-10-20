@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-19T19:06:06+00:00",
+ "generated_at": "2026-10-20T00:30:14+00:00",
  "rules": {
   "start": "2026-10-12",
   "review_weeks": 26,
@@ -32,37 +32,21 @@
    "rng": "python secrets.randbelow"
   }
  ],
- "as_of": "2026-10-19",
+ "as_of": "2026-10-16",
  "summary": {
-  "invested": 109.01,
-  "market_value": 108.34,
+  "invested": 12.35,
+  "market_value": 11.51,
   "cash": 0.0,
-  "total_value": 108.34,
-  "total_return_pct": -0.61,
+  "total_value": 11.51,
+  "total_return_pct": -6.8,
   "realized_pl": 0.0,
   "dividends": 0.0,
-  "positions": 2,
+  "positions": 1,
   "benchmark": "SPY",
-  "benchmark_value": 108.85,
-  "benchmark_return_pct": -0.15
+  "benchmark_value": 12.11,
+  "benchmark_return_pct": -1.94
  },
  "holdings": [
-  {
-   "ticker": "ATTR",
-   "name": "Arin Tactical Tail Risk ETF",
-   "exchange": "BATS",
-   "type": "ETF",
-   "bought_shares": 1.0,
-   "drip_shares": 0.0,
-   "shares": 1.0,
-   "cost": 96.66,
-   "price": 96.66,
-   "price_date": "2026-10-19",
-   "value": 96.66,
-   "dividends": 0.0,
-   "return_pct": 0.0,
-   "first_bought": "2026-10-19"
-  },
   {
    "ticker": "ASMH",
    "name": "ASML Holding NV ADRhedged",
@@ -72,25 +56,22 @@
    "drip_shares": 0.0,
    "shares": 1.0,
    "cost": 12.35,
-   "price": 11.68,
-   "price_date": "2026-10-19",
-   "value": 11.68,
+   "price": 11.509,
+   "price_date": "2026-10-16",
+   "value": 11.51,
    "dividends": 0.0,
-   "return_pct": -5.43,
+   "return_pct": -6.81,
    "first_bought": "2026-10-12"
   }
  ],
- "pending": [],
- "transactions": [
+ "pending": [
   {
-   "date": "2026-10-19",
-   "type": "BUY",
    "ticker": "ATTR",
-   "shares": 1.0,
-   "price": 96.66,
-   "amount": 96.66,
-   "week": 2
-  },
+   "name": "Arin Tactical Tail Risk ETF",
+   "date": "2026-10-19"
+  }
+ ],
+ "transactions": [
   {
    "date": "2026-10-12",
    "type": "BUY",
@@ -131,12 +112,6 @@
    "value": 11.51,
    "invested": 12.35,
    "benchmark": 12.11
-  },
-  {
-   "date": "2026-10-19",
-   "value": 108.34,
-   "invested": 109.01,
-   "benchmark": 108.85
   }
  ],
  "status": "active"
