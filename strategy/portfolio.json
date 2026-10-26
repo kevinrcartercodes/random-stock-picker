@@ -1,12 +1,12 @@
 {
- "generated_at": "2026-10-23T23:54:35+00:00",
+ "generated_at": "2026-10-26T19:03:47+00:00",
  "rules": {
   "start": "2026-10-12",
   "review_weeks": 26,
   "keep": 12,
   "benchmark": "SPY"
  },
- "next_pick": "2026-10-26",
+ "next_pick": "2026-11-02",
  "next_review": "2027-04-12",
  "picks": [
   {
@@ -30,23 +30,50 @@
    "universe_size": 12302,
    "picked_at": "2026-10-19T19:06:06+00:00",
    "rng": "python secrets.randbelow"
+  },
+  {
+   "week": 3,
+   "date": "2026-10-26",
+   "ticker": "LKFN",
+   "name": "Lakeland Financial Corporation - Common Stock",
+   "exchange": "NASDAQ",
+   "type": "Stock",
+   "universe_size": 12302,
+   "picked_at": "2026-10-26T19:03:47+00:00",
+   "rng": "python secrets.randbelow"
   }
  ],
- "as_of": "2026-10-23",
+ "as_of": "2026-10-26",
  "summary": {
-  "invested": 108.98,
-  "market_value": 107.37,
+  "invested": 169.75,
+  "market_value": 168.34,
   "cash": 0.0,
-  "total_value": 107.37,
-  "total_return_pct": -1.48,
+  "total_value": 168.34,
+  "total_return_pct": -0.83,
   "realized_pl": 0.0,
   "dividends": 0.0,
-  "positions": 2,
+  "positions": 3,
   "benchmark": "SPY",
-  "benchmark_value": 107.87,
-  "benchmark_return_pct": -1.02
+  "benchmark_value": 169.34,
+  "benchmark_return_pct": -0.24
  },
  "holdings": [
+  {
+   "ticker": "LKFN",
+   "name": "Lakeland Financial Corporation - Common Stock",
+   "exchange": "NASDAQ",
+   "type": "Stock",
+   "bought_shares": 1.0,
+   "drip_shares": 0.0,
+   "shares": 1.0,
+   "cost": 60.77,
+   "price": 60.77,
+   "price_date": "2026-10-26",
+   "value": 60.77,
+   "dividends": 0.0,
+   "return_pct": 0.0,
+   "first_bought": "2026-10-26"
+  },
   {
    "ticker": "ATTR",
    "name": "Arin Tactical Tail Risk ETF",
@@ -57,7 +84,7 @@
    "shares": 1.0,
    "cost": 96.63,
    "price": 96.31,
-   "price_date": "2026-10-23",
+   "price_date": "2026-10-26",
    "value": 96.31,
    "dividends": 0.0,
    "return_pct": -0.33,
@@ -72,16 +99,25 @@
    "drip_shares": 0.0,
    "shares": 1.0,
    "cost": 12.35,
-   "price": 11.06,
-   "price_date": "2026-10-23",
-   "value": 11.06,
+   "price": 11.264,
+   "price_date": "2026-10-26",
+   "value": 11.26,
    "dividends": 0.0,
-   "return_pct": -10.45,
+   "return_pct": -8.79,
    "first_bought": "2026-10-12"
   }
  ],
  "pending": [],
  "transactions": [
+  {
+   "date": "2026-10-26",
+   "type": "BUY",
+   "ticker": "LKFN",
+   "shares": 1.0,
+   "price": 60.77,
+   "amount": 60.77,
+   "week": 3
+  },
   {
    "date": "2026-10-19",
    "type": "BUY",
@@ -161,6 +197,12 @@
    "value": 107.37,
    "invested": 108.98,
    "benchmark": 107.87
+  },
+  {
+   "date": "2026-10-26",
+   "value": 168.34,
+   "invested": 169.75,
+   "benchmark": 169.34
   }
  ],
  "status": "active"
