@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-26T19:03:47+00:00",
+ "generated_at": "2026-10-27T00:40:19+00:00",
  "rules": {
   "start": "2026-10-12",
   "review_weeks": 26,
@@ -43,37 +43,21 @@
    "rng": "python secrets.randbelow"
   }
  ],
- "as_of": "2026-10-26",
+ "as_of": "2026-10-23",
  "summary": {
-  "invested": 169.75,
-  "market_value": 168.34,
+  "invested": 108.98,
+  "market_value": 107.37,
   "cash": 0.0,
-  "total_value": 168.34,
-  "total_return_pct": -0.83,
+  "total_value": 107.37,
+  "total_return_pct": -1.48,
   "realized_pl": 0.0,
   "dividends": 0.0,
-  "positions": 3,
+  "positions": 2,
   "benchmark": "SPY",
-  "benchmark_value": 169.34,
-  "benchmark_return_pct": -0.24
+  "benchmark_value": 107.87,
+  "benchmark_return_pct": -1.02
  },
  "holdings": [
-  {
-   "ticker": "LKFN",
-   "name": "Lakeland Financial Corporation - Common Stock",
-   "exchange": "NASDAQ",
-   "type": "Stock",
-   "bought_shares": 1.0,
-   "drip_shares": 0.0,
-   "shares": 1.0,
-   "cost": 60.77,
-   "price": 60.77,
-   "price_date": "2026-10-26",
-   "value": 60.77,
-   "dividends": 0.0,
-   "return_pct": 0.0,
-   "first_bought": "2026-10-26"
-  },
   {
    "ticker": "ATTR",
    "name": "Arin Tactical Tail Risk ETF",
@@ -84,7 +68,7 @@
    "shares": 1.0,
    "cost": 96.63,
    "price": 96.31,
-   "price_date": "2026-10-26",
+   "price_date": "2026-10-23",
    "value": 96.31,
    "dividends": 0.0,
    "return_pct": -0.33,
@@ -99,25 +83,22 @@
    "drip_shares": 0.0,
    "shares": 1.0,
    "cost": 12.35,
-   "price": 11.264,
-   "price_date": "2026-10-26",
-   "value": 11.26,
+   "price": 11.06,
+   "price_date": "2026-10-23",
+   "value": 11.06,
    "dividends": 0.0,
-   "return_pct": -8.79,
+   "return_pct": -10.45,
    "first_bought": "2026-10-12"
   }
  ],
- "pending": [],
- "transactions": [
+ "pending": [
   {
-   "date": "2026-10-26",
-   "type": "BUY",
    "ticker": "LKFN",
-   "shares": 1.0,
-   "price": 60.77,
-   "amount": 60.77,
-   "week": 3
-  },
+   "name": "Lakeland Financial Corporation - Common Stock",
+   "date": "2026-10-26"
+  }
+ ],
+ "transactions": [
   {
    "date": "2026-10-19",
    "type": "BUY",
@@ -197,12 +178,6 @@
    "value": 107.37,
    "invested": 108.98,
    "benchmark": 107.87
-  },
-  {
-   "date": "2026-10-26",
-   "value": 168.34,
-   "invested": 169.75,
-   "benchmark": 169.34
   }
  ],
  "status": "active"
