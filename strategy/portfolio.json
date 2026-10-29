@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-28T00:38:26+00:00",
+ "generated_at": "2026-10-29T01:08:02+00:00",
  "rules": {
   "start": "2026-10-12",
   "review_weeks": 26,
@@ -43,37 +43,21 @@
    "rng": "python secrets.randbelow"
   }
  ],
- "as_of": "2026-10-26",
+ "as_of": "2026-10-27",
  "summary": {
   "invested": 170.15,
-  "market_value": 168.88,
+  "market_value": 168.89,
   "cash": 0.0,
-  "total_value": 168.88,
-  "total_return_pct": -0.75,
+  "total_value": 168.89,
+  "total_return_pct": -0.74,
   "realized_pl": 0.0,
   "dividends": 0.0,
   "positions": 3,
   "benchmark": "SPY",
-  "benchmark_value": 169.81,
-  "benchmark_return_pct": -0.2
+  "benchmark_value": 170.76,
+  "benchmark_return_pct": 0.36
  },
  "holdings": [
-  {
-   "ticker": "LKFN",
-   "name": "Lakeland Financial Corporation - Common Stock",
-   "exchange": "NASDAQ",
-   "type": "Stock",
-   "bought_shares": 1.0,
-   "drip_shares": 0.0,
-   "shares": 1.0,
-   "cost": 61.17,
-   "price": 61.17,
-   "price_date": "2026-10-26",
-   "value": 61.17,
-   "dividends": 0.0,
-   "return_pct": 0.0,
-   "first_bought": "2026-10-26"
-  },
   {
    "ticker": "ATTR",
    "name": "Arin Tactical Tail Risk ETF",
@@ -83,12 +67,28 @@
    "drip_shares": 0.0,
    "shares": 1.0,
    "cost": 96.63,
-   "price": 96.47,
-   "price_date": "2026-10-26",
-   "value": 96.47,
+   "price": 96.643,
+   "price_date": "2026-10-27",
+   "value": 96.64,
    "dividends": 0.0,
-   "return_pct": -0.16,
+   "return_pct": 0.01,
    "first_bought": "2026-10-19"
+  },
+  {
+   "ticker": "LKFN",
+   "name": "Lakeland Financial Corporation - Common Stock",
+   "exchange": "NASDAQ",
+   "type": "Stock",
+   "bought_shares": 1.0,
+   "drip_shares": 0.0,
+   "shares": 1.0,
+   "cost": 61.17,
+   "price": 60.71,
+   "price_date": "2026-10-27",
+   "value": 60.71,
+   "dividends": 0.0,
+   "return_pct": -0.75,
+   "first_bought": "2026-10-26"
   },
   {
    "ticker": "ASMH",
@@ -99,11 +99,11 @@
    "drip_shares": 0.0,
    "shares": 1.0,
    "cost": 12.35,
-   "price": 11.24,
-   "price_date": "2026-10-26",
-   "value": 11.24,
+   "price": 11.54,
+   "price_date": "2026-10-27",
+   "value": 11.54,
    "dividends": 0.0,
-   "return_pct": -8.99,
+   "return_pct": -6.56,
    "first_bought": "2026-10-12"
   }
  ],
@@ -203,6 +203,12 @@
    "value": 168.88,
    "invested": 170.15,
    "benchmark": 169.81
+  },
+  {
+   "date": "2026-10-27",
+   "value": 168.89,
+   "invested": 170.15,
+   "benchmark": 170.76
   }
  ],
  "status": "active"
