@@ -1,12 +1,12 @@
 {
- "generated_at": "2026-10-31T00:56:19+00:00",
+ "generated_at": "2026-11-02T22:11:47+00:00",
  "rules": {
   "start": "2026-10-12",
   "review_weeks": 26,
   "keep": 12,
   "benchmark": "SPY"
  },
- "next_pick": "2026-11-02",
+ "next_pick": "2026-11-09",
  "next_review": "2027-04-12",
  "picks": [
   {
@@ -41,39 +41,34 @@
    "universe_size": 12302,
    "picked_at": "2026-10-26T19:03:47+00:00",
    "rng": "python secrets.randbelow"
+  },
+  {
+   "week": 4,
+   "date": "2026-11-02",
+   "ticker": "GOOG",
+   "name": "Alphabet Inc. - Class C Capital Stock",
+   "exchange": "NASDAQ",
+   "type": "Stock",
+   "universe_size": 12302,
+   "picked_at": "2026-11-02T22:11:47+00:00",
+   "rng": "python secrets.randbelow"
   }
  ],
- "as_of": "2026-10-29",
+ "as_of": "2026-11-02",
  "summary": {
-  "invested": 170.15,
-  "market_value": 169.51,
+  "invested": 448.19,
+  "market_value": 446.9,
   "cash": 0.0,
-  "total_value": 169.51,
-  "total_return_pct": -0.38,
+  "total_value": 446.9,
+  "total_return_pct": -0.29,
   "realized_pl": 0.0,
   "dividends": 0.0,
-  "positions": 3,
+  "positions": 4,
   "benchmark": "SPY",
-  "benchmark_value": 170.69,
-  "benchmark_return_pct": 0.32
+  "benchmark_value": 444.9,
+  "benchmark_return_pct": -0.73
  },
  "holdings": [
-  {
-   "ticker": "ATTR",
-   "name": "Arin Tactical Tail Risk ETF",
-   "exchange": "BATS",
-   "type": "ETF",
-   "bought_shares": 1.0,
-   "drip_shares": 0.0,
-   "shares": 1.0,
-   "cost": 96.63,
-   "price": 96.678,
-   "price_date": "2026-10-29",
-   "value": 96.68,
-   "dividends": 0.0,
-   "return_pct": 0.05,
-   "first_bought": "2026-10-19"
-  },
   {
    "ticker": "LKFN",
    "name": "Lakeland Financial Corporation - Common Stock",
@@ -83,12 +78,44 @@
    "drip_shares": 0.0,
    "shares": 1.0,
    "cost": 61.17,
-   "price": 61.02,
-   "price_date": "2026-10-29",
-   "value": 61.02,
+   "price": 61.84,
+   "price_date": "2026-11-02",
+   "value": 61.84,
    "dividends": 0.0,
-   "return_pct": -0.25,
+   "return_pct": 1.1,
    "first_bought": "2026-10-26"
+  },
+  {
+   "ticker": "GOOG",
+   "name": "Alphabet Inc. - Class C Capital Stock",
+   "exchange": "NASDAQ",
+   "type": "Stock",
+   "bought_shares": 1.0,
+   "drip_shares": 0.0,
+   "shares": 1.0,
+   "cost": 278.04,
+   "price": 278.04,
+   "price_date": "2026-11-02",
+   "value": 278.04,
+   "dividends": 0.0,
+   "return_pct": 0.0,
+   "first_bought": "2026-11-02"
+  },
+  {
+   "ticker": "ATTR",
+   "name": "Arin Tactical Tail Risk ETF",
+   "exchange": "BATS",
+   "type": "ETF",
+   "bought_shares": 1.0,
+   "drip_shares": 0.0,
+   "shares": 1.0,
+   "cost": 96.63,
+   "price": 96.2323,
+   "price_date": "2026-11-02",
+   "value": 96.23,
+   "dividends": 0.0,
+   "return_pct": -0.41,
+   "first_bought": "2026-10-19"
   },
   {
    "ticker": "ASMH",
@@ -99,16 +126,25 @@
    "drip_shares": 0.0,
    "shares": 1.0,
    "cost": 12.35,
-   "price": 11.811,
-   "price_date": "2026-10-29",
-   "value": 11.81,
+   "price": 10.7896,
+   "price_date": "2026-11-02",
+   "value": 10.79,
    "dividends": 0.0,
-   "return_pct": -4.36,
+   "return_pct": -12.63,
    "first_bought": "2026-10-12"
   }
  ],
  "pending": [],
  "transactions": [
+  {
+   "date": "2026-11-02",
+   "type": "BUY",
+   "ticker": "GOOG",
+   "shares": 1.0,
+   "price": 278.04,
+   "amount": 278.04,
+   "week": 4
+  },
   {
    "date": "2026-10-26",
    "type": "BUY",
@@ -221,6 +257,18 @@
    "value": 169.51,
    "invested": 170.15,
    "benchmark": 170.69
+  },
+  {
+   "date": "2026-10-30",
+   "value": 167.48,
+   "invested": 170.15,
+   "benchmark": 167.67
+  },
+  {
+   "date": "2026-11-02",
+   "value": 446.9,
+   "invested": 448.19,
+   "benchmark": 444.9
   }
  ],
  "status": "active"
