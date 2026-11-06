@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-05T01:36:31+00:00",
+ "generated_at": "2026-11-06T01:42:24+00:00",
  "rules": {
   "start": "2026-10-12",
   "review_weeks": 26,
@@ -54,37 +54,21 @@
    "rng": "python secrets.randbelow"
   }
  ],
- "as_of": "2026-11-03",
+ "as_of": "2026-11-04",
  "summary": {
   "invested": 448.19,
-  "market_value": 446.79,
+  "market_value": 457.23,
   "cash": 0.0,
-  "total_value": 446.79,
-  "total_return_pct": -0.31,
+  "total_value": 457.23,
+  "total_return_pct": 2.02,
   "realized_pl": 0.0,
   "dividends": 0.0,
   "positions": 4,
   "benchmark": "SPY",
-  "benchmark_value": 446.23,
-  "benchmark_return_pct": -0.44
+  "benchmark_value": 453.6,
+  "benchmark_return_pct": 1.21
  },
  "holdings": [
-  {
-   "ticker": "LKFN",
-   "name": "Lakeland Financial Corporation - Common Stock",
-   "exchange": "NASDAQ",
-   "type": "Stock",
-   "bought_shares": 1.0,
-   "drip_shares": 0.0,
-   "shares": 1.0,
-   "cost": 61.17,
-   "price": 61.26,
-   "price_date": "2026-11-03",
-   "value": 61.26,
-   "dividends": 0.0,
-   "return_pct": 0.15,
-   "first_bought": "2026-10-26"
-  },
   {
    "ticker": "GOOG",
    "name": "Alphabet Inc. - Class C Capital Stock",
@@ -94,12 +78,28 @@
    "drip_shares": 0.0,
    "shares": 1.0,
    "cost": 278.04,
-   "price": 278.27,
-   "price_date": "2026-11-03",
-   "value": 278.27,
+   "price": 287.3,
+   "price_date": "2026-11-04",
+   "value": 287.3,
    "dividends": 0.0,
-   "return_pct": 0.08,
+   "return_pct": 3.33,
    "first_bought": "2026-11-02"
+  },
+  {
+   "ticker": "LKFN",
+   "name": "Lakeland Financial Corporation - Common Stock",
+   "exchange": "NASDAQ",
+   "type": "Stock",
+   "bought_shares": 1.0,
+   "drip_shares": 0.0,
+   "shares": 1.0,
+   "cost": 61.17,
+   "price": 62.9,
+   "price_date": "2026-11-04",
+   "value": 62.9,
+   "dividends": 0.0,
+   "return_pct": 2.83,
+   "first_bought": "2026-10-26"
   },
   {
    "ticker": "ATTR",
@@ -110,11 +110,11 @@
    "drip_shares": 0.0,
    "shares": 1.0,
    "cost": 96.63,
-   "price": 96.274,
-   "price_date": "2026-11-03",
-   "value": 96.27,
+   "price": 96.496,
+   "price_date": "2026-11-04",
+   "value": 96.5,
    "dividends": 0.0,
-   "return_pct": -0.37,
+   "return_pct": -0.14,
    "first_bought": "2026-10-19"
   },
   {
@@ -126,11 +126,11 @@
    "drip_shares": 0.0,
    "shares": 1.0,
    "cost": 12.35,
-   "price": 10.99,
-   "price_date": "2026-11-03",
-   "value": 10.99,
+   "price": 10.53,
+   "price_date": "2026-11-04",
+   "value": 10.53,
    "dividends": 0.0,
-   "return_pct": -11.01,
+   "return_pct": -14.74,
    "first_bought": "2026-10-12"
   }
  ],
@@ -275,6 +275,12 @@
    "value": 446.79,
    "invested": 448.19,
    "benchmark": 446.23
+  },
+  {
+   "date": "2026-11-04",
+   "value": 457.23,
+   "invested": 448.19,
+   "benchmark": 453.6
   }
  ],
  "status": "active"
