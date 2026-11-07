@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-06T01:42:24+00:00",
+ "generated_at": "2026-11-07T01:01:58+00:00",
  "rules": {
   "start": "2026-10-12",
   "review_weeks": 26,
@@ -54,19 +54,19 @@
    "rng": "python secrets.randbelow"
   }
  ],
- "as_of": "2026-11-04",
+ "as_of": "2026-11-05",
  "summary": {
   "invested": 448.19,
-  "market_value": 457.23,
+  "market_value": 448.7,
   "cash": 0.0,
-  "total_value": 457.23,
-  "total_return_pct": 2.02,
+  "total_value": 448.7,
+  "total_return_pct": 0.11,
   "realized_pl": 0.0,
   "dividends": 0.0,
   "positions": 4,
   "benchmark": "SPY",
-  "benchmark_value": 453.6,
-  "benchmark_return_pct": 1.21
+  "benchmark_value": 433.6,
+  "benchmark_return_pct": -3.26
  },
  "holdings": [
   {
@@ -78,11 +78,11 @@
    "drip_shares": 0.0,
    "shares": 1.0,
    "cost": 278.04,
-   "price": 287.3,
-   "price_date": "2026-11-04",
-   "value": 287.3,
+   "price": 281.74,
+   "price_date": "2026-11-05",
+   "value": 281.74,
    "dividends": 0.0,
-   "return_pct": 3.33,
+   "return_pct": 1.33,
    "first_bought": "2026-11-02"
   },
   {
@@ -94,11 +94,11 @@
    "drip_shares": 0.0,
    "shares": 1.0,
    "cost": 61.17,
-   "price": 62.9,
-   "price_date": "2026-11-04",
-   "value": 62.9,
+   "price": 61.37,
+   "price_date": "2026-11-05",
+   "value": 61.37,
    "dividends": 0.0,
-   "return_pct": 2.83,
+   "return_pct": 0.33,
    "first_bought": "2026-10-26"
   },
   {
@@ -110,11 +110,11 @@
    "drip_shares": 0.0,
    "shares": 1.0,
    "cost": 96.63,
-   "price": 96.496,
-   "price_date": "2026-11-04",
-   "value": 96.5,
+   "price": 95.93,
+   "price_date": "2026-11-05",
+   "value": 95.93,
    "dividends": 0.0,
-   "return_pct": -0.14,
+   "return_pct": -0.72,
    "first_bought": "2026-10-19"
   },
   {
@@ -126,11 +126,11 @@
    "drip_shares": 0.0,
    "shares": 1.0,
    "cost": 12.35,
-   "price": 10.53,
-   "price_date": "2026-11-04",
-   "value": 10.53,
+   "price": 9.66,
+   "price_date": "2026-11-05",
+   "value": 9.66,
    "dividends": 0.0,
-   "return_pct": -14.74,
+   "return_pct": -21.78,
    "first_bought": "2026-10-12"
   }
  ],
@@ -281,6 +281,12 @@
    "value": 457.23,
    "invested": 448.19,
    "benchmark": 453.6
+  },
+  {
+   "date": "2026-11-05",
+   "value": 448.7,
+   "invested": 448.19,
+   "benchmark": 433.6
   }
  ],
  "status": "active"
