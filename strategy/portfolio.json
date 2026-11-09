@@ -1,12 +1,12 @@
 {
- "generated_at": "2026-11-07T01:01:58+00:00",
+ "generated_at": "2026-11-09T22:54:09+00:00",
  "rules": {
   "start": "2026-10-12",
   "review_weeks": 26,
   "keep": 12,
   "benchmark": "SPY"
  },
- "next_pick": "2026-11-09",
+ "next_pick": "2026-11-16",
  "next_review": "2027-04-12",
  "picks": [
   {
@@ -52,21 +52,32 @@
    "universe_size": 12302,
    "picked_at": "2026-11-02T22:11:47+00:00",
    "rng": "python secrets.randbelow"
+  },
+  {
+   "week": 5,
+   "date": "2026-11-09",
+   "ticker": "ALLY",
+   "name": "Ally Financial Inc. Common Stock",
+   "exchange": "NYSE",
+   "type": "Stock",
+   "universe_size": 12302,
+   "picked_at": "2026-11-09T22:54:09+00:00",
+   "rng": "python secrets.randbelow"
   }
  ],
- "as_of": "2026-11-05",
+ "as_of": "2026-11-09",
  "summary": {
-  "invested": 448.19,
-  "market_value": 448.7,
+  "invested": 486.72,
+  "market_value": 493.65,
   "cash": 0.0,
-  "total_value": 448.7,
-  "total_return_pct": 0.11,
+  "total_value": 493.65,
+  "total_return_pct": 1.42,
   "realized_pl": 0.0,
   "dividends": 0.0,
-  "positions": 4,
+  "positions": 5,
   "benchmark": "SPY",
-  "benchmark_value": 433.6,
-  "benchmark_return_pct": -3.26
+  "benchmark_value": 483.78,
+  "benchmark_return_pct": -0.6
  },
  "holdings": [
   {
@@ -78,11 +89,11 @@
    "drip_shares": 0.0,
    "shares": 1.0,
    "cost": 278.04,
-   "price": 281.74,
-   "price_date": "2026-11-05",
-   "value": 281.74,
+   "price": 286.01,
+   "price_date": "2026-11-09",
+   "value": 286.01,
    "dividends": 0.0,
-   "return_pct": 1.33,
+   "return_pct": 2.87,
    "first_bought": "2026-11-02"
   },
   {
@@ -94,12 +105,28 @@
    "drip_shares": 0.0,
    "shares": 1.0,
    "cost": 61.17,
-   "price": 61.37,
-   "price_date": "2026-11-05",
-   "value": 61.37,
+   "price": 62.2,
+   "price_date": "2026-11-09",
+   "value": 62.2,
    "dividends": 0.0,
-   "return_pct": 0.33,
+   "return_pct": 1.68,
    "first_bought": "2026-10-26"
+  },
+  {
+   "ticker": "ALLY",
+   "name": "Ally Financial Inc. Common Stock",
+   "exchange": "NYSE",
+   "type": "Stock",
+   "bought_shares": 1.0,
+   "drip_shares": 0.0,
+   "shares": 1.0,
+   "cost": 38.53,
+   "price": 38.53,
+   "price_date": "2026-11-09",
+   "value": 38.53,
+   "dividends": 0.0,
+   "return_pct": 0.0,
+   "first_bought": "2026-11-09"
   },
   {
    "ticker": "ATTR",
@@ -110,11 +137,11 @@
    "drip_shares": 0.0,
    "shares": 1.0,
    "cost": 96.63,
-   "price": 95.93,
-   "price_date": "2026-11-05",
-   "value": 95.93,
+   "price": 96.212,
+   "price_date": "2026-11-09",
+   "value": 96.21,
    "dividends": 0.0,
-   "return_pct": -0.72,
+   "return_pct": -0.43,
    "first_bought": "2026-10-19"
   },
   {
@@ -126,16 +153,25 @@
    "drip_shares": 0.0,
    "shares": 1.0,
    "cost": 12.35,
-   "price": 9.66,
-   "price_date": "2026-11-05",
-   "value": 9.66,
+   "price": 10.7,
+   "price_date": "2026-11-09",
+   "value": 10.7,
    "dividends": 0.0,
-   "return_pct": -21.78,
+   "return_pct": -13.36,
    "first_bought": "2026-10-12"
   }
  ],
  "pending": [],
  "transactions": [
+  {
+   "date": "2026-11-09",
+   "type": "BUY",
+   "ticker": "ALLY",
+   "shares": 1.0,
+   "price": 38.53,
+   "amount": 38.53,
+   "week": 5
+  },
   {
    "date": "2026-11-02",
    "type": "BUY",
@@ -287,6 +323,18 @@
    "value": 448.7,
    "invested": 448.19,
    "benchmark": 433.6
+  },
+  {
+   "date": "2026-11-06",
+   "value": 451.05,
+   "invested": 448.19,
+   "benchmark": 434.96
+  },
+  {
+   "date": "2026-11-09",
+   "value": 493.65,
+   "invested": 486.72,
+   "benchmark": 483.78
   }
  ],
  "status": "active"
