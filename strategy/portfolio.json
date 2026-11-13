@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-12T02:22:24+00:00",
+ "generated_at": "2026-11-13T02:00:27+00:00",
  "rules": {
   "start": "2026-10-12",
   "review_weeks": 26,
@@ -65,19 +65,19 @@
    "rng": "python secrets.randbelow"
   }
  ],
- "as_of": "2026-11-10",
+ "as_of": "2026-11-11",
  "summary": {
   "invested": 486.72,
-  "market_value": 491.61,
+  "market_value": 498.29,
   "cash": 0.0,
-  "total_value": 491.61,
-  "total_return_pct": 1.0,
+  "total_value": 498.29,
+  "total_return_pct": 2.38,
   "realized_pl": 0.0,
   "dividends": 0.0,
   "positions": 5,
   "benchmark": "SPY",
-  "benchmark_value": 482.0,
-  "benchmark_return_pct": -0.97
+  "benchmark_value": 488.36,
+  "benchmark_return_pct": 0.34
  },
  "holdings": [
   {
@@ -89,11 +89,11 @@
    "drip_shares": 0.0,
    "shares": 1.0,
    "cost": 278.04,
-   "price": 284.92,
-   "price_date": "2026-11-10",
-   "value": 284.92,
+   "price": 290.63,
+   "price_date": "2026-11-11",
+   "value": 290.63,
    "dividends": 0.0,
-   "return_pct": 2.47,
+   "return_pct": 4.53,
    "first_bought": "2026-11-02"
   },
   {
@@ -105,11 +105,11 @@
    "drip_shares": 0.0,
    "shares": 1.0,
    "cost": 61.17,
-   "price": 62.09,
-   "price_date": "2026-11-10",
-   "value": 62.09,
+   "price": 62.07,
+   "price_date": "2026-11-11",
+   "value": 62.07,
    "dividends": 0.0,
-   "return_pct": 1.5,
+   "return_pct": 1.47,
    "first_bought": "2026-10-26"
   },
   {
@@ -121,11 +121,11 @@
    "drip_shares": 0.0,
    "shares": 1.0,
    "cost": 96.63,
-   "price": 96.207,
-   "price_date": "2026-11-10",
-   "value": 96.21,
+   "price": 96.355,
+   "price_date": "2026-11-11",
+   "value": 96.36,
    "dividends": 0.0,
-   "return_pct": -0.44,
+   "return_pct": -0.28,
    "first_bought": "2026-10-19"
   },
   {
@@ -137,11 +137,11 @@
    "drip_shares": 0.0,
    "shares": 1.0,
    "cost": 38.53,
-   "price": 37.67,
-   "price_date": "2026-11-10",
-   "value": 37.67,
+   "price": 38.27,
+   "price_date": "2026-11-11",
+   "value": 38.27,
    "dividends": 0.0,
-   "return_pct": -2.23,
+   "return_pct": -0.67,
    "first_bought": "2026-11-09"
   },
   {
@@ -153,11 +153,11 @@
    "drip_shares": 0.0,
    "shares": 1.0,
    "cost": 12.35,
-   "price": 10.722,
-   "price_date": "2026-11-10",
-   "value": 10.72,
+   "price": 10.96,
+   "price_date": "2026-11-11",
+   "value": 10.96,
    "dividends": 0.0,
-   "return_pct": -13.18,
+   "return_pct": -11.26,
    "first_bought": "2026-10-12"
   }
  ],
@@ -341,6 +341,12 @@
    "value": 491.61,
    "invested": 486.72,
    "benchmark": 482.0
+  },
+  {
+   "date": "2026-11-11",
+   "value": 498.29,
+   "invested": 486.72,
+   "benchmark": 488.36
   }
  ],
  "status": "active"
