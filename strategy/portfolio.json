@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-17T04:04:15+00:00",
+ "generated_at": "2026-11-18T03:01:40+00:00",
  "rules": {
   "start": "2026-10-12",
   "review_weeks": 26,
@@ -76,37 +76,21 @@
    "rng": "python secrets.randbelow"
   }
  ],
- "as_of": "2026-11-16",
+ "as_of": "2026-11-17",
  "summary": {
   "invested": 529.54,
-  "market_value": 530.58,
+  "market_value": 524.23,
   "cash": 0.0,
-  "total_value": 530.58,
-  "total_return_pct": 0.2,
+  "total_value": 524.23,
+  "total_return_pct": -1.0,
   "realized_pl": 0.0,
   "dividends": 0.0,
   "positions": 6,
   "benchmark": "SPY",
-  "benchmark_value": 518.41,
-  "benchmark_return_pct": -2.1
+  "benchmark_value": 513.15,
+  "benchmark_return_pct": -3.1
  },
  "holdings": [
-  {
-   "ticker": "LKFN",
-   "name": "Lakeland Financial Corporation - Common Stock",
-   "exchange": "NASDAQ",
-   "type": "Stock",
-   "bought_shares": 1.0,
-   "drip_shares": 0.0,
-   "shares": 1.0,
-   "cost": 61.17,
-   "price": 62.11,
-   "price_date": "2026-11-16",
-   "value": 62.11,
-   "dividends": 0.0,
-   "return_pct": 1.54,
-   "first_bought": "2026-10-26"
-  },
   {
    "ticker": "GOOG",
    "name": "Alphabet Inc. - Class C Capital Stock",
@@ -116,28 +100,28 @@
    "drip_shares": 0.0,
    "shares": 1.0,
    "cost": 278.04,
-   "price": 281.26,
-   "price_date": "2026-11-16",
-   "value": 281.26,
+   "price": 277.6,
+   "price_date": "2026-11-17",
+   "value": 277.6,
    "dividends": 0.0,
-   "return_pct": 1.16,
+   "return_pct": -0.16,
    "first_bought": "2026-11-02"
   },
   {
-   "ticker": "BAMG",
-   "name": "Brookstone Growth Stock ETF",
-   "exchange": "BATS",
-   "type": "ETF",
+   "ticker": "LKFN",
+   "name": "Lakeland Financial Corporation - Common Stock",
+   "exchange": "NASDAQ",
+   "type": "Stock",
    "bought_shares": 1.0,
    "drip_shares": 0.0,
    "shares": 1.0,
-   "cost": 42.82,
-   "price": 42.8207,
-   "price_date": "2026-11-16",
-   "value": 42.82,
+   "cost": 61.17,
+   "price": 60.89,
+   "price_date": "2026-11-17",
+   "value": 60.89,
    "dividends": 0.0,
-   "return_pct": 0.0,
-   "first_bought": "2026-11-16"
+   "return_pct": -0.46,
+   "first_bought": "2026-10-26"
   },
   {
    "ticker": "ATTR",
@@ -148,12 +132,28 @@
    "drip_shares": 0.0,
    "shares": 1.0,
    "cost": 96.63,
-   "price": 96.1006,
-   "price_date": "2026-11-16",
-   "value": 96.1,
+   "price": 95.9123,
+   "price_date": "2026-11-17",
+   "value": 95.91,
    "dividends": 0.0,
-   "return_pct": -0.55,
+   "return_pct": -0.74,
    "first_bought": "2026-10-19"
+  },
+  {
+   "ticker": "BAMG",
+   "name": "Brookstone Growth Stock ETF",
+   "exchange": "BATS",
+   "type": "ETF",
+   "bought_shares": 1.0,
+   "drip_shares": 0.0,
+   "shares": 1.0,
+   "cost": 42.82,
+   "price": 42.3689,
+   "price_date": "2026-11-17",
+   "value": 42.37,
+   "dividends": 0.0,
+   "return_pct": -1.06,
+   "first_bought": "2026-11-16"
   },
   {
    "ticker": "ALLY",
@@ -164,11 +164,11 @@
    "drip_shares": 0.0,
    "shares": 1.0,
    "cost": 38.53,
-   "price": 38.11,
-   "price_date": "2026-11-16",
-   "value": 38.11,
+   "price": 37.46,
+   "price_date": "2026-11-17",
+   "value": 37.46,
    "dividends": 0.0,
-   "return_pct": -1.09,
+   "return_pct": -2.78,
    "first_bought": "2026-11-09"
   },
   {
@@ -180,11 +180,11 @@
    "drip_shares": 0.0,
    "shares": 1.0,
    "cost": 12.35,
-   "price": 10.184,
-   "price_date": "2026-11-16",
-   "value": 10.18,
+   "price": 9.998,
+   "price_date": "2026-11-17",
+   "value": 10.0,
    "dividends": 0.0,
-   "return_pct": -17.54,
+   "return_pct": -19.04,
    "first_bought": "2026-10-12"
   }
  ],
@@ -195,7 +195,7 @@
    "type": "BUY",
    "ticker": "BAMG",
    "shares": 1.0,
-   "price": 42.8207,
+   "price": 42.821,
    "amount": 42.82,
    "week": 6
   },
@@ -401,6 +401,12 @@
    "value": 530.59,
    "invested": 529.54,
    "benchmark": 518.41
+  },
+  {
+   "date": "2026-11-17",
+   "value": 524.23,
+   "invested": 529.54,
+   "benchmark": 513.15
   }
  ],
  "status": "active"
