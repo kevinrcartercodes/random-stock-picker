@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-19T02:42:37+00:00",
+ "generated_at": "2026-11-20T02:29:20+00:00",
  "rules": {
   "start": "2026-10-12",
   "review_weeks": 26,
@@ -76,19 +76,19 @@
    "rng": "python secrets.randbelow"
   }
  ],
- "as_of": "2026-11-18",
+ "as_of": "2026-11-19",
  "summary": {
   "invested": 529.54,
-  "market_value": 525.97,
+  "market_value": 523.75,
   "cash": 0.0,
-  "total_value": 525.97,
-  "total_return_pct": -0.67,
+  "total_value": 523.75,
+  "total_return_pct": -1.09,
   "realized_pl": 0.0,
   "dividends": 0.0,
   "positions": 6,
   "benchmark": "SPY",
-  "benchmark_value": 511.58,
-  "benchmark_return_pct": -3.39
+  "benchmark_value": 501.54,
+  "benchmark_return_pct": -5.29
  },
  "holdings": [
   {
@@ -108,20 +108,20 @@
    "first_bought": "2026-11-02"
   },
   {
-   "ticker": "BAMG",
-   "name": "Brookstone Growth Stock ETF",
+   "ticker": "ATTR",
+   "name": "Arin Tactical Tail Risk ETF",
    "exchange": "BATS",
    "type": "ETF",
    "bought_shares": 1.0,
    "drip_shares": 0.0,
    "shares": 1.0,
-   "cost": 42.82,
-   "price": 42.568,
-   "price_date": "2026-11-18",
-   "value": 42.57,
+   "cost": 96.63,
+   "price": 95.2556,
+   "price_date": "2026-11-19",
+   "value": 95.26,
    "dividends": 0.0,
-   "return_pct": -0.59,
-   "first_bought": "2026-11-16"
+   "return_pct": -1.42,
+   "first_bought": "2026-10-19"
   },
   {
    "ticker": "LKFN",
@@ -132,28 +132,12 @@
    "drip_shares": 0.0,
    "shares": 1.0,
    "cost": 61.17,
-   "price": 60.74,
-   "price_date": "2026-11-18",
-   "value": 60.74,
+   "price": 59.9,
+   "price_date": "2026-11-19",
+   "value": 59.9,
    "dividends": 0.0,
-   "return_pct": -0.7,
+   "return_pct": -2.08,
    "first_bought": "2026-10-26"
-  },
-  {
-   "ticker": "ATTR",
-   "name": "Arin Tactical Tail Risk ETF",
-   "exchange": "BATS",
-   "type": "ETF",
-   "bought_shares": 1.0,
-   "drip_shares": 0.0,
-   "shares": 1.0,
-   "cost": 96.63,
-   "price": 95.6729,
-   "price_date": "2026-11-18",
-   "value": 95.67,
-   "dividends": 0.0,
-   "return_pct": -0.99,
-   "first_bought": "2026-10-19"
   },
   {
    "ticker": "ALLY",
@@ -170,6 +154,22 @@
    "dividends": 0.0,
    "return_pct": -2.23,
    "first_bought": "2026-11-09"
+  },
+  {
+   "ticker": "BAMG",
+   "name": "Brookstone Growth Stock ETF",
+   "exchange": "BATS",
+   "type": "ETF",
+   "bought_shares": 1.0,
+   "drip_shares": 0.0,
+   "shares": 1.0,
+   "cost": 42.82,
+   "price": 41.5996,
+   "price_date": "2026-11-19",
+   "value": 41.6,
+   "dividends": 0.0,
+   "return_pct": -2.85,
+   "first_bought": "2026-11-16"
   },
   {
    "ticker": "ASMH",
@@ -413,6 +413,12 @@
    "value": 525.97,
    "invested": 529.54,
    "benchmark": 511.58
+  },
+  {
+   "date": "2026-11-19",
+   "value": 523.75,
+   "invested": 529.54,
+   "benchmark": 501.54
   }
  ],
  "status": "active"
