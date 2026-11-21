@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-20T02:29:20+00:00",
+ "generated_at": "2026-11-21T02:40:08+00:00",
  "rules": {
   "start": "2026-10-12",
   "review_weeks": 26,
@@ -76,37 +76,21 @@
    "rng": "python secrets.randbelow"
   }
  ],
- "as_of": "2026-11-19",
+ "as_of": "2026-11-20",
  "summary": {
   "invested": 529.54,
-  "market_value": 523.75,
+  "market_value": 503.06,
   "cash": 0.0,
-  "total_value": 523.75,
-  "total_return_pct": -1.09,
+  "total_value": 503.06,
+  "total_return_pct": -5.0,
   "realized_pl": 0.0,
   "dividends": 0.0,
   "positions": 6,
   "benchmark": "SPY",
-  "benchmark_value": 501.54,
-  "benchmark_return_pct": -5.29
+  "benchmark_value": 483.29,
+  "benchmark_return_pct": -8.73
  },
  "holdings": [
-  {
-   "ticker": "GOOG",
-   "name": "Alphabet Inc. - Class C Capital Stock",
-   "exchange": "NASDAQ",
-   "type": "Stock",
-   "bought_shares": 1.0,
-   "drip_shares": 0.0,
-   "shares": 1.0,
-   "cost": 278.04,
-   "price": 279.2,
-   "price_date": "2026-11-18",
-   "value": 279.2,
-   "dividends": 0.0,
-   "return_pct": 0.42,
-   "first_bought": "2026-11-02"
-  },
   {
    "ticker": "ATTR",
    "name": "Arin Tactical Tail Risk ETF",
@@ -116,11 +100,11 @@
    "drip_shares": 0.0,
    "shares": 1.0,
    "cost": 96.63,
-   "price": 95.2556,
-   "price_date": "2026-11-19",
-   "value": 95.26,
+   "price": 94.1423,
+   "price_date": "2026-11-20",
+   "value": 94.14,
    "dividends": 0.0,
-   "return_pct": -1.42,
+   "return_pct": -2.57,
    "first_bought": "2026-10-19"
   },
   {
@@ -132,12 +116,28 @@
    "drip_shares": 0.0,
    "shares": 1.0,
    "cost": 61.17,
-   "price": 59.9,
-   "price_date": "2026-11-19",
-   "value": 59.9,
+   "price": 59.56,
+   "price_date": "2026-11-20",
+   "value": 59.56,
    "dividends": 0.0,
-   "return_pct": -2.08,
+   "return_pct": -2.63,
    "first_bought": "2026-10-26"
+  },
+  {
+   "ticker": "GOOG",
+   "name": "Alphabet Inc. - Class C Capital Stock",
+   "exchange": "NASDAQ",
+   "type": "Stock",
+   "bought_shares": 1.0,
+   "drip_shares": 0.0,
+   "shares": 1.0,
+   "cost": 278.04,
+   "price": 264.0,
+   "price_date": "2026-11-20",
+   "value": 264.0,
+   "dividends": 0.0,
+   "return_pct": -5.05,
+   "first_bought": "2026-11-02"
   },
   {
    "ticker": "ALLY",
@@ -148,11 +148,11 @@
    "drip_shares": 0.0,
    "shares": 1.0,
    "cost": 38.53,
-   "price": 37.67,
-   "price_date": "2026-11-18",
-   "value": 37.67,
+   "price": 36.32,
+   "price_date": "2026-11-20",
+   "value": 36.32,
    "dividends": 0.0,
-   "return_pct": -2.23,
+   "return_pct": -5.74,
    "first_bought": "2026-11-09"
   },
   {
@@ -164,11 +164,11 @@
    "drip_shares": 0.0,
    "shares": 1.0,
    "cost": 42.82,
-   "price": 41.5996,
-   "price_date": "2026-11-19",
-   "value": 41.6,
+   "price": 39.77,
+   "price_date": "2026-11-20",
+   "value": 39.77,
    "dividends": 0.0,
-   "return_pct": -2.85,
+   "return_pct": -7.13,
    "first_bought": "2026-11-16"
   },
   {
@@ -180,11 +180,11 @@
    "drip_shares": 0.0,
    "shares": 1.0,
    "cost": 12.35,
-   "price": 10.12,
-   "price_date": "2026-11-18",
-   "value": 10.12,
+   "price": 9.267,
+   "price_date": "2026-11-20",
+   "value": 9.27,
    "dividends": 0.0,
-   "return_pct": -18.06,
+   "return_pct": -24.96,
    "first_bought": "2026-10-12"
   }
  ],
@@ -416,9 +416,15 @@
   },
   {
    "date": "2026-11-19",
-   "value": 523.75,
+   "value": 514.62,
    "invested": 529.54,
    "benchmark": 501.54
+  },
+  {
+   "date": "2026-11-20",
+   "value": 503.06,
+   "invested": 529.54,
+   "benchmark": 483.29
   }
  ],
  "status": "active"
