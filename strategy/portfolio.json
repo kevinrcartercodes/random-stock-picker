@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-24T00:37:38+00:00",
+ "generated_at": "2026-11-24T05:25:15+00:00",
  "rules": {
   "start": "2026-10-12",
   "review_weeks": 26,
@@ -127,7 +127,7 @@
    "drip_shares": 0.0,
    "shares": 1.0,
    "cost": 56.11,
-   "price": 56.1074,
+   "price": 56.11,
    "price_date": "2026-11-23",
    "value": 56.11,
    "dividends": 0.0,
@@ -159,7 +159,7 @@
    "drip_shares": 0.0,
    "shares": 1.0,
    "cost": 96.63,
-   "price": 95.7959,
+   "price": 95.796,
    "price_date": "2026-11-23",
    "value": 95.8,
    "dividends": 0.0,
@@ -207,11 +207,11 @@
    "drip_shares": 0.0,
    "shares": 1.0,
    "cost": 12.35,
-   "price": 10.0944,
+   "price": 10.094,
    "price_date": "2026-11-23",
    "value": 10.09,
    "dividends": 0.0,
-   "return_pct": -18.26,
+   "return_pct": -18.27,
    "first_bought": "2026-10-12"
   }
  ],
@@ -222,7 +222,7 @@
    "type": "BUY",
    "ticker": "PTH",
    "shares": 1.0,
-   "price": 56.1074,
+   "price": 56.11,
    "amount": 56.11,
    "week": 7
   },
