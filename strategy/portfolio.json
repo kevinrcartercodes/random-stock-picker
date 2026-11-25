@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-24T05:25:15+00:00",
+ "generated_at": "2026-11-25T04:26:50+00:00",
  "rules": {
   "start": "2026-10-12",
   "review_weeks": 26,
@@ -87,37 +87,21 @@
    "rng": "python secrets.randbelow"
   }
  ],
- "as_of": "2026-11-23",
+ "as_of": "2026-11-24",
  "summary": {
   "invested": 585.65,
-  "market_value": 581.43,
+  "market_value": 579.72,
   "cash": 0.0,
-  "total_value": 581.43,
-  "total_return_pct": -0.72,
+  "total_value": 579.72,
+  "total_return_pct": -1.01,
   "realized_pl": 0.0,
   "dividends": 0.0,
   "positions": 7,
   "benchmark": "SPY",
-  "benchmark_value": 562.15,
-  "benchmark_return_pct": -4.01
+  "benchmark_value": 559.42,
+  "benchmark_return_pct": -4.48
  },
  "holdings": [
-  {
-   "ticker": "GOOG",
-   "name": "Alphabet Inc. - Class C Capital Stock",
-   "exchange": "NASDAQ",
-   "type": "Stock",
-   "bought_shares": 1.0,
-   "drip_shares": 0.0,
-   "shares": 1.0,
-   "cost": 278.04,
-   "price": 279.53,
-   "price_date": "2026-11-23",
-   "value": 279.53,
-   "dividends": 0.0,
-   "return_pct": 0.54,
-   "first_bought": "2026-11-02"
-  },
   {
    "ticker": "PTH",
    "name": "Invesco Dorsey Wright Healthcare Momentum ETF",
@@ -127,11 +111,11 @@
    "drip_shares": 0.0,
    "shares": 1.0,
    "cost": 56.11,
-   "price": 56.11,
-   "price_date": "2026-11-23",
-   "value": 56.11,
+   "price": 58.41,
+   "price_date": "2026-11-24",
+   "value": 58.41,
    "dividends": 0.0,
-   "return_pct": 0.0,
+   "return_pct": 4.1,
    "first_bought": "2026-11-23"
   },
   {
@@ -143,12 +127,28 @@
    "drip_shares": 0.0,
    "shares": 1.0,
    "cost": 61.17,
-   "price": 60.65,
-   "price_date": "2026-11-23",
-   "value": 60.65,
+   "price": 60.96,
+   "price_date": "2026-11-24",
+   "value": 60.96,
    "dividends": 0.0,
-   "return_pct": -0.85,
+   "return_pct": -0.34,
    "first_bought": "2026-10-26"
+  },
+  {
+   "ticker": "GOOG",
+   "name": "Alphabet Inc. - Class C Capital Stock",
+   "exchange": "NASDAQ",
+   "type": "Stock",
+   "bought_shares": 1.0,
+   "drip_shares": 0.0,
+   "shares": 1.0,
+   "cost": 278.04,
+   "price": 276.58,
+   "price_date": "2026-11-24",
+   "value": 276.58,
+   "dividends": 0.0,
+   "return_pct": -0.53,
+   "first_bought": "2026-11-02"
   },
   {
    "ticker": "ATTR",
@@ -159,28 +159,12 @@
    "drip_shares": 0.0,
    "shares": 1.0,
    "cost": 96.63,
-   "price": 95.796,
-   "price_date": "2026-11-23",
-   "value": 95.8,
+   "price": 95.4579,
+   "price_date": "2026-11-24",
+   "value": 95.46,
    "dividends": 0.0,
-   "return_pct": -0.86,
+   "return_pct": -1.21,
    "first_bought": "2026-10-19"
-  },
-  {
-   "ticker": "BAMG",
-   "name": "Brookstone Growth Stock ETF",
-   "exchange": "BATS",
-   "type": "ETF",
-   "bought_shares": 1.0,
-   "drip_shares": 0.0,
-   "shares": 1.0,
-   "cost": 42.82,
-   "price": 41.759,
-   "price_date": "2026-11-23",
-   "value": 41.76,
-   "dividends": 0.0,
-   "return_pct": -2.48,
-   "first_bought": "2026-11-16"
   },
   {
    "ticker": "ALLY",
@@ -191,12 +175,28 @@
    "drip_shares": 0.0,
    "shares": 1.0,
    "cost": 38.53,
-   "price": 37.49,
-   "price_date": "2026-11-23",
-   "value": 37.49,
+   "price": 37.36,
+   "price_date": "2026-11-24",
+   "value": 37.36,
    "dividends": 0.0,
-   "return_pct": -2.7,
+   "return_pct": -3.04,
    "first_bought": "2026-11-09"
+  },
+  {
+   "ticker": "BAMG",
+   "name": "Brookstone Growth Stock ETF",
+   "exchange": "BATS",
+   "type": "ETF",
+   "bought_shares": 1.0,
+   "drip_shares": 0.0,
+   "shares": 1.0,
+   "cost": 42.82,
+   "price": 41.2075,
+   "price_date": "2026-11-24",
+   "value": 41.21,
+   "dividends": 0.0,
+   "return_pct": -3.77,
+   "first_bought": "2026-11-16"
   },
   {
    "ticker": "ASMH",
@@ -207,11 +207,11 @@
    "drip_shares": 0.0,
    "shares": 1.0,
    "cost": 12.35,
-   "price": 10.094,
-   "price_date": "2026-11-23",
-   "value": 10.09,
+   "price": 9.738,
+   "price_date": "2026-11-24",
+   "value": 9.74,
    "dividends": 0.0,
-   "return_pct": -18.27,
+   "return_pct": -21.15,
    "first_bought": "2026-10-12"
   }
  ],
@@ -467,6 +467,12 @@
    "value": 581.43,
    "invested": 585.65,
    "benchmark": 562.15
+  },
+  {
+   "date": "2026-11-24",
+   "value": 579.71,
+   "invested": 585.65,
+   "benchmark": 559.42
   }
  ],
  "status": "active"
