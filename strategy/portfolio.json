@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-25T04:26:50+00:00",
+ "generated_at": "2026-11-26T03:41:41+00:00",
  "rules": {
   "start": "2026-10-12",
   "review_weeks": 26,
@@ -87,19 +87,19 @@
    "rng": "python secrets.randbelow"
   }
  ],
- "as_of": "2026-11-24",
+ "as_of": "2026-11-25",
  "summary": {
   "invested": 585.65,
-  "market_value": 579.72,
+  "market_value": 574.44,
   "cash": 0.0,
-  "total_value": 579.72,
-  "total_return_pct": -1.01,
+  "total_value": 574.44,
+  "total_return_pct": -1.91,
   "realized_pl": 0.0,
   "dividends": 0.0,
   "positions": 7,
   "benchmark": "SPY",
-  "benchmark_value": 559.42,
-  "benchmark_return_pct": -4.48
+  "benchmark_value": 557.8,
+  "benchmark_return_pct": -4.76
  },
  "holdings": [
   {
@@ -111,11 +111,11 @@
    "drip_shares": 0.0,
    "shares": 1.0,
    "cost": 56.11,
-   "price": 58.41,
-   "price_date": "2026-11-24",
-   "value": 58.41,
+   "price": 58.12,
+   "price_date": "2026-11-25",
+   "value": 58.12,
    "dividends": 0.0,
-   "return_pct": 4.1,
+   "return_pct": 3.58,
    "first_bought": "2026-11-23"
   },
   {
@@ -127,44 +127,12 @@
    "drip_shares": 0.0,
    "shares": 1.0,
    "cost": 61.17,
-   "price": 60.96,
-   "price_date": "2026-11-24",
-   "value": 60.96,
+   "price": 61.06,
+   "price_date": "2026-11-25",
+   "value": 61.06,
    "dividends": 0.0,
-   "return_pct": -0.34,
+   "return_pct": -0.18,
    "first_bought": "2026-10-26"
-  },
-  {
-   "ticker": "GOOG",
-   "name": "Alphabet Inc. - Class C Capital Stock",
-   "exchange": "NASDAQ",
-   "type": "Stock",
-   "bought_shares": 1.0,
-   "drip_shares": 0.0,
-   "shares": 1.0,
-   "cost": 278.04,
-   "price": 276.58,
-   "price_date": "2026-11-24",
-   "value": 276.58,
-   "dividends": 0.0,
-   "return_pct": -0.53,
-   "first_bought": "2026-11-02"
-  },
-  {
-   "ticker": "ATTR",
-   "name": "Arin Tactical Tail Risk ETF",
-   "exchange": "BATS",
-   "type": "ETF",
-   "bought_shares": 1.0,
-   "drip_shares": 0.0,
-   "shares": 1.0,
-   "cost": 96.63,
-   "price": 95.4579,
-   "price_date": "2026-11-24",
-   "value": 95.46,
-   "dividends": 0.0,
-   "return_pct": -1.21,
-   "first_bought": "2026-10-19"
   },
   {
    "ticker": "ALLY",
@@ -175,12 +143,44 @@
    "drip_shares": 0.0,
    "shares": 1.0,
    "cost": 38.53,
-   "price": 37.36,
-   "price_date": "2026-11-24",
-   "value": 37.36,
+   "price": 38.46,
+   "price_date": "2026-11-25",
+   "value": 38.46,
    "dividends": 0.0,
-   "return_pct": -3.04,
+   "return_pct": -0.18,
    "first_bought": "2026-11-09"
+  },
+  {
+   "ticker": "ATTR",
+   "name": "Arin Tactical Tail Risk ETF",
+   "exchange": "BATS",
+   "type": "ETF",
+   "bought_shares": 1.0,
+   "drip_shares": 0.0,
+   "shares": 1.0,
+   "cost": 96.63,
+   "price": 95.2117,
+   "price_date": "2026-11-25",
+   "value": 95.21,
+   "dividends": 0.0,
+   "return_pct": -1.47,
+   "first_bought": "2026-10-19"
+  },
+  {
+   "ticker": "GOOG",
+   "name": "Alphabet Inc. - Class C Capital Stock",
+   "exchange": "NASDAQ",
+   "type": "Stock",
+   "bought_shares": 1.0,
+   "drip_shares": 0.0,
+   "shares": 1.0,
+   "cost": 278.04,
+   "price": 270.98,
+   "price_date": "2026-11-25",
+   "value": 270.98,
+   "dividends": 0.0,
+   "return_pct": -2.54,
+   "first_bought": "2026-11-02"
   },
   {
    "ticker": "BAMG",
@@ -191,11 +191,11 @@
    "drip_shares": 0.0,
    "shares": 1.0,
    "cost": 42.82,
-   "price": 41.2075,
-   "price_date": "2026-11-24",
-   "value": 41.21,
+   "price": 41.12,
+   "price_date": "2026-11-25",
+   "value": 41.12,
    "dividends": 0.0,
-   "return_pct": -3.77,
+   "return_pct": -3.97,
    "first_bought": "2026-11-16"
   },
   {
@@ -207,11 +207,11 @@
    "drip_shares": 0.0,
    "shares": 1.0,
    "cost": 12.35,
-   "price": 9.738,
-   "price_date": "2026-11-24",
-   "value": 9.74,
+   "price": 9.495,
+   "price_date": "2026-11-25",
+   "value": 9.49,
    "dividends": 0.0,
-   "return_pct": -21.15,
+   "return_pct": -23.12,
    "first_bought": "2026-10-12"
   }
  ],
@@ -473,6 +473,12 @@
    "value": 579.71,
    "invested": 585.65,
    "benchmark": 559.42
+  },
+  {
+   "date": "2026-11-25",
+   "value": 574.45,
+   "invested": 585.65,
+   "benchmark": 557.8
   }
  ],
  "status": "active"
