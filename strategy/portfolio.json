@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-26T03:41:41+00:00",
+ "generated_at": "2026-11-27T03:42:27+00:00",
  "rules": {
   "start": "2026-10-12",
   "review_weeks": 26,
@@ -159,7 +159,7 @@
    "drip_shares": 0.0,
    "shares": 1.0,
    "cost": 96.63,
-   "price": 95.2117,
+   "price": 95.212,
    "price_date": "2026-11-25",
    "value": 95.21,
    "dividends": 0.0,
