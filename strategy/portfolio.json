@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-27T03:42:27+00:00",
+ "generated_at": "2026-11-28T03:25:14+00:00",
  "rules": {
   "start": "2026-10-12",
   "review_weeks": 26,
@@ -87,19 +87,19 @@
    "rng": "python secrets.randbelow"
   }
  ],
- "as_of": "2026-11-25",
+ "as_of": "2026-11-27",
  "summary": {
   "invested": 585.65,
-  "market_value": 574.44,
+  "market_value": 578.24,
   "cash": 0.0,
-  "total_value": 574.44,
-  "total_return_pct": -1.91,
+  "total_value": 578.24,
+  "total_return_pct": -1.27,
   "realized_pl": 0.0,
-  "dividends": 0.0,
+  "dividends": 0.03,
   "positions": 7,
   "benchmark": "SPY",
-  "benchmark_value": 557.8,
-  "benchmark_return_pct": -4.76
+  "benchmark_value": 566.84,
+  "benchmark_return_pct": -3.21
  },
  "holdings": [
   {
@@ -111,28 +111,12 @@
    "drip_shares": 0.0,
    "shares": 1.0,
    "cost": 56.11,
-   "price": 58.12,
-   "price_date": "2026-11-25",
-   "value": 58.12,
+   "price": 58.78,
+   "price_date": "2026-11-27",
+   "value": 58.78,
    "dividends": 0.0,
-   "return_pct": 3.58,
+   "return_pct": 4.76,
    "first_bought": "2026-11-23"
-  },
-  {
-   "ticker": "LKFN",
-   "name": "Lakeland Financial Corporation - Common Stock",
-   "exchange": "NASDAQ",
-   "type": "Stock",
-   "bought_shares": 1.0,
-   "drip_shares": 0.0,
-   "shares": 1.0,
-   "cost": 61.17,
-   "price": 61.06,
-   "price_date": "2026-11-25",
-   "value": 61.06,
-   "dividends": 0.0,
-   "return_pct": -0.18,
-   "first_bought": "2026-10-26"
   },
   {
    "ticker": "ALLY",
@@ -143,12 +127,28 @@
    "drip_shares": 0.0,
    "shares": 1.0,
    "cost": 38.53,
-   "price": 38.46,
-   "price_date": "2026-11-25",
-   "value": 38.46,
+   "price": 38.75,
+   "price_date": "2026-11-27",
+   "value": 38.75,
    "dividends": 0.0,
-   "return_pct": -0.18,
+   "return_pct": 0.57,
    "first_bought": "2026-11-09"
+  },
+  {
+   "ticker": "LKFN",
+   "name": "Lakeland Financial Corporation - Common Stock",
+   "exchange": "NASDAQ",
+   "type": "Stock",
+   "bought_shares": 1.0,
+   "drip_shares": 0.0,
+   "shares": 1.0,
+   "cost": 61.17,
+   "price": 61.38,
+   "price_date": "2026-11-27",
+   "value": 61.38,
+   "dividends": 0.0,
+   "return_pct": 0.34,
+   "first_bought": "2026-10-26"
   },
   {
    "ticker": "ATTR",
@@ -159,11 +159,11 @@
    "drip_shares": 0.0,
    "shares": 1.0,
    "cost": 96.63,
-   "price": 95.212,
-   "price_date": "2026-11-25",
-   "value": 95.21,
+   "price": 95.4482,
+   "price_date": "2026-11-27",
+   "value": 95.45,
    "dividends": 0.0,
-   "return_pct": -1.47,
+   "return_pct": -1.22,
    "first_bought": "2026-10-19"
   },
   {
@@ -175,11 +175,11 @@
    "drip_shares": 0.0,
    "shares": 1.0,
    "cost": 278.04,
-   "price": 270.98,
-   "price_date": "2026-11-25",
-   "value": 270.98,
+   "price": 272.44,
+   "price_date": "2026-11-27",
+   "value": 272.44,
    "dividends": 0.0,
-   "return_pct": -2.54,
+   "return_pct": -2.01,
    "first_bought": "2026-11-02"
   },
   {
@@ -188,14 +188,14 @@
    "exchange": "BATS",
    "type": "ETF",
    "bought_shares": 1.0,
-   "drip_shares": 0.0,
-   "shares": 1.0,
+   "drip_shares": 0.000671,
+   "shares": 1.000671,
    "cost": 42.82,
-   "price": 41.12,
-   "price_date": "2026-11-25",
-   "value": 41.12,
-   "dividends": 0.0,
-   "return_pct": -3.97,
+   "price": 41.752,
+   "price_date": "2026-11-27",
+   "value": 41.78,
+   "dividends": 0.03,
+   "return_pct": -2.43,
    "first_bought": "2026-11-16"
   },
   {
@@ -207,16 +207,24 @@
    "drip_shares": 0.0,
    "shares": 1.0,
    "cost": 12.35,
-   "price": 9.495,
-   "price_date": "2026-11-25",
-   "value": 9.49,
+   "price": 9.66,
+   "price_date": "2026-11-27",
+   "value": 9.66,
    "dividends": 0.0,
-   "return_pct": -23.12,
+   "return_pct": -21.78,
    "first_bought": "2026-10-12"
   }
  ],
  "pending": [],
  "transactions": [
+  {
+   "date": "2026-11-27",
+   "type": "DIV",
+   "ticker": "BAMG",
+   "shares": 0.000671,
+   "price": 41.752,
+   "amount": 0.03
+  },
   {
    "date": "2026-11-23",
    "type": "BUY",
@@ -479,6 +487,12 @@
    "value": 574.45,
    "invested": 585.65,
    "benchmark": 557.8
+  },
+  {
+   "date": "2026-11-27",
+   "value": 578.24,
+   "invested": 585.65,
+   "benchmark": 566.84
   }
  ],
  "status": "active"
